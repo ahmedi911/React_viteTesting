@@ -53,20 +53,7 @@ export default function Home() {
         className="relative flex flex-col gap-4 items-center justify-center px-4 h-auto"
       >  
 
-<div className=" gap-6 justify-center items-center pt-10 lg:flex hidden">
-  <a href="#" className="text-black text-lg font-semibold hover:text-gray-700 transition duration-300">
-    About Me
-  </a>
-  <a href="#" className="text-black text-lg font-semibold hover:text-gray-700  transition duration-300">
-    Projects
-  </a>
-  <a href="#" className="text-black text-lg font-semibold hover:text-gray-700  transition duration-300">
-    Skills
-  </a>
-  <a href="#" className="text-black text-lg font-semibold hover:text-gray-700  transition duration-300">
-    Contact Information
-  </a>
-</div>
+
 
         <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
           Hi Everyone this is Ahmed
