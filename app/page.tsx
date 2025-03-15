@@ -213,7 +213,7 @@ export default function Home() {
           </a>
 
           {/* LinkedIn */}
-          <a href="www.linkedin.com/in/ahmed-ali-casper-4b187b264" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 text-3xl transition">
+          <a href="https://www.linkedin.com/in/ahmed-ali-casper-4b187b264" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 text-3xl transition">
             <FaLinkedin />
           </a>
 
