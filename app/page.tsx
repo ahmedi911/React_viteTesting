@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import React from "react";
 import { AuroraBackground } from "../components/ui/aurora-background";
 import Image from "next/image";
-import { FaInstagram, FaLinkedin, FaFacebook, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaFacebook, FaEnvelope } from "react-icons/fa";
 
 const skills = [
   // Frontend Skills
@@ -86,7 +86,7 @@ export default function Home() {
   </h1>
   <div className="max-w-3xl text-center mt-6 space-y-4">
     <p className="text-lg text-gray-700 dark:text-gray-300">
-      Hi, I'm <span className="font-semibold text-blue-600 dark:text-blue-400">Ahmed Ismail a 20 years old who loves building a Full-stack apps</span>.
+      Hi, Im <span className="font-semibold text-blue-600 dark:text-blue-400">Ahmed Ismail a 20 years old who loves building a Full-stack apps</span>
     </p>
     <p className="text-lg text-gray-700 dark:text-gray-300">
       A Jordanian <span className="font-semibold">Full-Stack Developer</span> with expertise in 
