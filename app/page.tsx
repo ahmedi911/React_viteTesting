@@ -1,10 +1,38 @@
 "use client";
- 
+// import { Github } from 'lucide-react';
 import { motion } from "motion/react";
 import React from "react";
 import { AuroraBackground } from "../components/ui/aurora-background";
 import Image from "next/image";
 import { FaInstagram, FaLinkedin, FaFacebook, FaEnvelope } from "react-icons/fa";
+
+
+const projects = [
+    {
+      name: "Game-store project",
+      description: "An online marketplace for video games",
+      link: "https://game-store-plum.vercel.app/", // Replace with your actual links
+      technologies: ["React", "ruby on rails"]
+    },
+    {
+      name: "Job-application",
+      description: "Job board and application tracking system",
+      link: "https://job-application-smoky.vercel.app/",
+      technologies: ["React", "ruby on rails"]
+    },
+    {
+      name: "Classified-ad project",
+      description: "Platform for posting and browsing classified advertisements",
+      link: "https://classfied-ad.vercel.app/",
+      technologies: ["React", "ruby on rails"]
+    },
+    {
+      name: "Blog app",
+      description: "Content management system for blogging",
+      link: "https://proj-1-delta.vercel.app/",
+      technologies: ["React", "ruby on rails"]
+    }
+  ];
 
 const skills = [
   // Frontend Skills
@@ -90,18 +118,65 @@ export default function Home() {
   <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white text-center mb-12">
     My Projects
   </h1>
-  
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 w-3/4 max-w-6xl px-6">
-    {["Game-store project", "Job-application", "Classified-ad project", "Blog app"].map((project, index) => (
-      <div key={index} className="relative group">
-        <div className="bg-white/30 dark:bg-gray-800/40 backdrop-blur-md shadow-xl rounded-2xl p-8 text-center transform transition-all duration-300 hover:scale-105 hover:bg-white/40 dark:hover:bg-gray-800/60">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white">
-            {project}
-          </h2>
+    <div className="bg-amber-50 border-l-4 border-amber-500 dark:bg-amber-900/30 dark:border-amber-500 p-4 my-6 rounded-md shadow-md max-w-6xl mx-auto">
+      <div className="flex items-start">
+        <div className="flex-shrink-0">
+          <div className="h-6 w-6 text-amber-500" aria-hidden="true" />
+        </div>
+        <div className="ml-3">
+          <h3 className="text-lg font-medium text-amber-800 dark:text-amber-200">
+            Simulator Environment
+          </h3>
+          <div className="mt-2 text-amber-700 dark:text-amber-300">
+            <p className="text-sm">
+              Please note that the hosted versions of these projects are running in a simulator environment 
+              for demonstration purposes only. For access to the complete, original project source code and documentation, 
+              please visit my <a 
+                href="https://github.com/ahmedi911" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="font-medium underline hover:text-amber-900 dark:hover:text-amber-100 transition-colors"
+              >
+                GitHub profile
+              </a>.
+            </p>
+          </div>
         </div>
       </div>
-    ))}
-  </div>
+    </div>
+  
+    <div className="py-10 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {projects.map((project, index) => (
+            <a target="_blank"
+              href={project.link} 
+              key={index}
+              className="group block "
+            >
+              <div className="bg-white/30 dark:bg-gray-800/40 backdrop-blur-md shadow-xl rounded-2xl p-8 h-full transform transition-all duration-300 hover:scale-105 hover:bg-white/40 dark:hover:bg-gray-800/60 border border-transparent hover:border-blue-300 dark:hover:border-blue-500">
+                <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-4">
+                  {project.name}
+                </h2>
+                <p className="text-gray-600 dark:text-gray-300 mb-6">
+                  {project.description}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {project.technologies.map((tech, techIndex) => (
+                    <span 
+                      key={techIndex} 
+                      className="px-3 py-1 text-sm bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
 </div>
 {/* my skills */}
 
