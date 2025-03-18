@@ -29,7 +29,7 @@ const skills = [
   { name: "MongoDB", image: "/skills2/mongo.png" },
   { name: "Java", image: "/skills2/java.png" },
   { name: "Python", image: "/skills2/py.png" },
-  { name: "C++", image: "/skills2/c++.png" }]
+  { name: "Cpp", image: "/skills2/cpp.png" }]
 
   const skills3 =[
   // DevOps Skills
