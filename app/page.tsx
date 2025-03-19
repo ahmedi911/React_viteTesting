@@ -288,7 +288,7 @@ export default function Home() {
           
 
           {/* Email (Gmail) */}
-          <a href="mailto:ahmedalicasper@gmail.com" className="text-red-500 hover:text-red-600 text-3xl transition">
+          <a href="mailto:hijunior33@gmail.com" className="text-red-500 hover:text-red-600 text-3xl transition">
             <FaEnvelope />
           </a>
         </div>
